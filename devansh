@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creative Webpage </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Container Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+            flex: 1;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            text-align: center;
+            color: white;
+            padding: 30px;
+            font-size: 2.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            letter-spacing: 3px;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        .main-content .content {
+            flex: 0 0 70%;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .main-content .sidebar {
+            flex: 0 0 25%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* YouTube Section Styling */
+        .youtube-thumbnail {
+            width: 30vw; /* 10% of the screen width */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .youtube-description {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .youtube-link {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #ff4500;
+            transition: color 0.3s ease;
+        }
+
+        .youtube-link:hover {
+            color: #ff6347;
+        }
+
+        /* ChatGPT Section Styling */
+        .chatgpt-section {
+            margin-top: 20px;
+        }
+
+        .chatgpt-logo {
+            width: 10vw; /* 10% of the screen width */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .chatgpt-description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .chatgpt-link {
+            text-decoration: none;
+            font-weight: bold;
+            color: #1e90ff;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .chatgpt-link:hover {
+            color: #4682b4;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        .footer-contact {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        .footer-contact div {
+            font-size: 18px;
+        }
+
+        .footer-contact i {
+            margin-right: 8px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .main-content .content,
+            .main-content .sidebar {
+                flex: 0 0 100%;
+                margin-bottom: 20px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 2rem;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Creative Space 💡</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://www.name.com/domains/homes">🏠 Home</a></li>
+            <li><a href="https://websitelearners.com/domain-checker/">📚 Learn</a></li>
+            <li><a href="https://www.mightynetworks.com/project-name-generator">🖥️ Projects</a></li>
+            <li><a href="https://seqlegal.com/legal-services/domain-name-contracts">📞 Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="content">
+                <h2>Explore My Creative World 🌍</h2>
+                <p>Welcome to a world of creativity, coding, and exploration. Dive into tutorials, project showcases, and learn some awesome tricks that will level up your skills! 🎯</p>
+
+                <!-- YouTube Section -->
+                <div>
+                    <h3>🎬 Check Out This Cool Video!</h3>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="YouTube Thumbnail" class="youtube-thumbnail">
+                    </a>
+                    <p class="youtube-description">💡 Learn amazing tips and tricks to improve your skills with this video! Don't forget to watch, like, and subscribe! 🚀</p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="youtube-link">👉 Watch Now</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Section -->
+            <div class="sidebar">
+                <h3>🛠️ Tools & Resources</h3>
+                <p>Check out the following resources to boost your productivity:</p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+                    <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                </ul>
+
+                <!-- ChatGPT Section -->
+                <div class="chatgpt-section">
+                    <h3>🤖 ChatGPT - Your AI Assistant</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" alt="ChatGPT Logo" class="chatgpt-logo">
+                    <p class="chatgpt-description">ChatGPT is an AI-powered assistant that helps with coding, brainstorming, writing, and more! Use it for advice, information, and assistance in your projects. 🧠</p>
+                    <a href="https://chat.openai.com/" target="_blank" class="chatgpt-link">👉 Start Chatting with ChatGPT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Creative Space. All rights reserved.</p>
+        <div class="footer-contact">
+            <div>
+                <i class="fas fa-phone-alt"></i><strong> Phone:</strong> +918209283054
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i><strong> Email:</strong> devansh@gmail.com
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
